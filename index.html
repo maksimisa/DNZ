@@ -5,115 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <!-- Подключаю шрифт c Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="wrap__head">
-                <a href="#" class="logo">
-                    <img src="image/logo.png" alt="logo">
-                </a>
-                <nav class="head__menu">
-                    <ul class="head__list">
-                        <li class="head__item">
-                            <a href="" class="head__link">
-                                +7 800 555 3535
-                            </a>
-                        </li>
-                        <li class="head__item">
-                            <a href="" class="head__link">
-                                <img class="item__img" src="image/cart.svg" alt="cart">
-                            </a>
-                        </li>
-                        <li class="head__item">
-                            <button class="head__btn">
-                                Корзина
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
 
-    <main class="main">
-        <div class="container__main">
-            <div class="wrap__main">
-                <div class="container__menu">
-                    <nav class="body__menu">
-                        <ul class="body__list">
-                            <li class="body__item">
-                                <a href="#" class="body__link">
-                                    Пункт 1
+    <!-- HEADER -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="wrap__head">
+                    <!-- Логотип -->
+                    <a href="#" class="logo">
+                        <img src="image/logo.png" alt="logo">
+                    </a>
+                    <!-- Правые элементы header -->
+                    <nav class="head__menu">
+                        <ul class="head__list">
+                            <li class="head__item">
+                                <a href="#" class="head__link">
+                                    +7 800 555 3535
                                 </a>
                             </li>
-                            <li class="body__item">
-                                <a href="#" class="body__link">
-                                    Пункт 2
+                            <li class="head__item">
+                                <a href="#" class="head__link">
+                                    <img class="item__img" src="image/cart.svg" alt="cart">
                                 </a>
                             </li>
-                            <li class="body__item">
-                                <a href="#" class="body__link">
-                                    Пункт 3
-                                </a>
+                            <li class="head__item">
+                                <button class="head__btn">
+                                    Корзина
+                                </button>
                             </li>
                         </ul>
                     </nav>
                 </div>
-        
-                <section class="container__cont">
-                    <table class="table">
-                        <tr class="row__1">
-                            <td class="table__item">
-                                ФИО
-                            </td>
-                            <td class="table__item">
-                                <input type="text">
-                            </td>
-                        </tr>
-                        <tr class="row__2">
-                            <td class="table__item">
-                                Товар
-                            </td>
-                            <td class="table__item">
-                                <select name="product__select" required="required">
-                                    <option value="">Выберите товар</option>
-                                    <option value="1">Ноутбук</option>
-                                    <option value="2">Смартфон</option>
-                                    <option value="3">Планшет</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr class="row__3">
-                            <td class="table__item">
-                                Оплата
-                            </td>
-                            <td class="table__item">
-                                <p><input name="pay" type="radio" value="cash"> Наличка</p>
-                                <p><input name="pay" type="radio" value="card" checked> Карта</p>
-                                <p><input type="submit" value="Оплатить"></p>
-                            </td>
-                        </tr>
-                    </table>
-                </section>
             </div>
-        
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container__foot">
-            <div class="link__footer">
-                <a href="#" class="info__link">
-                    <p class="info">Копирайты</p>
-                </a>
-                <a href="#" class="contact__link">
-                    <p class="contact">Контакты</p>
-                </a>
+        </header>
+
+        <!-- Основной блок контента (MAIN) -->
+        <main class="main">
+            <!-- Общий контейнер -->
+            <div class="container__main">
+                <div class="wrap__main">
+                    <!-- Контейнер левого блока с меню -->
+                    <div class="container__menu">
+                        <nav class="body__menu">
+                            <ul class="body__list">
+                                <li class="body__item">
+                                    <a href="#" class="body__link">
+                                        Пункт 1
+                                    </a>
+                                </li>
+                                <li class="body__item">
+                                    <a href="#" class="body__link">
+                                        Пункт 2
+                                    </a>
+                                </li>
+                                <li class="body__item">
+                                    <a href="#" class="body__link">
+                                        Пункт 3
+                                    </a>
+                                </li>
+                                <li class="body__item">
+                                    <a href="#" class="body__link">
+                                        Пункт 4
+                                    </a>
+                                </li>
+                                <li class="body__item">
+                                    <a href="#" class="body__link">
+                                        Пункт 5
+                                    </a>
+                                </li>
+                                <li class="body__item">
+                                    <a href="#" class="body__link">
+                                        Пункт 6
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Серый прямоугольник под меню -->
+                        <div class="block"></div>
+                    </div>
+            
+                    <!-- Правый блок с анкетой оплаты -->
+                    <section class="container__cont">
+                        <table class="table">
+                            <!-- Строка с полем ввода -->
+                            <tr class="row__1">
+                                <td class="table__item">
+                                    ФИО
+                                </td>
+                                <td class="table__item">
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <!-- Строка с выпадающим списком -->
+                            <tr class="row__2">
+                                <td class="table__item">
+                                    Товар
+                                </td>
+                                <td class="table__item">
+                                    <select name="product__select" required="required">
+                                        <option value="">Выберите товар</option>
+                                        <option value="1">Ноутбук</option>
+                                        <option value="2">Смартфон</option>
+                                        <option value="3">Планшет</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <!-- Строка с выбором способа оплаты -->
+                            <tr class="row__3">
+                                <td class="table__item">
+                                    Оплата
+                                </td>
+                                <td class="table__item">
+                                    <p><input name="pay" type="radio" value="cash"> Наличка</p>
+                                    <p><input name="pay" type="radio" value="card" checked> Карта</p>
+                                    <p><input type="submit" value="Оплатить"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
             </div>
-        </div>
-    </footer>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container__foot">
+                <div class="link__footer">
+                    <div class="left__side">
+                        <a href="#" class="info__link">
+                            <p class="info">Копирайты</p>
+                        </a>
+                    </div>
+                    <div class="right__side">
+                        <a href="#" class="contact__link">
+                            <p class="contact">Контакты</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
